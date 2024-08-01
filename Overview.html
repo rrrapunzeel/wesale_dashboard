@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Sales Overview Dashboard - Key Performance Indicators</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content="#000000" />
+    <meta 
+    name="description" 
+    content="Explore our Sales Overview Dashboard for insights into sales records, analytics, and growth trends. Track top-selling products and sales by category to optimize performance."
+    />
+    <img
+    src="public/images/logo.svg" 
+    alt="logo" class="header__logo"
+    style="width: 0px; height: 0px; display: none;"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/font.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./css/components.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/Overview.css" />
+    <style>
+      
+
+        .card-summary, .top-selling-product {
+            flex: 1 1 auto;
+            padding: var(--space-xl);
+        }
+
+        .card-summary {
+            max-width: 60%; 
+        }
+
+        .top-selling-product {
+            max-width: 35%;
+        }
+
+        @media only screen and (max-width: 1050px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .card-summary, .top-selling-product {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Main content section -->
+    <div class="flex-col-center-center overview">
+        <div class="overview-1">
+            <!-- Header section -->
+            <header class="header">
+                <div class="header__top-row">
+                    <img src="public/images/logo.svg" alt="Brand Image" class="header__logo"/>
+                    <div class="header__navigation">
+                        <div class="header__navigation-row">
+                            <div class="header_navigation-buttons">
+                                <button class="header__button--overview ui button deep_purple_50 size-md fill round">Overview</button>
+                                <button class="header__button--sales-records ui button white_a700 size-md fill round">Sales Records</button>
+                                <button class="header__button--analytic ui button white_a700 size-md fill round">Analytic</button>
+                            </div>
+                            <a href="#">
+                                <button class="header__notification ui button white_a700 size-sm fill round">
+                                    <img src="public/images/img_bell.svg" />
+                                </button>
+                            </a>
+                        </div>
+                        <div class="header__profile">
+                            <img src="public/images/img_shape.png" alt="Profile Image" class="header__profile-image" />
+                        </div>
+                    </div>
+                </div>
+                <h1 class="header__title ui heading size-text4xl">Overview Dashboard</h1>
+            </header>
+
+            <!-- Overview Content -->
+            <div class="main-content">
+                <div class="overview__content">
+                    <!-- Summary and Top Selling Products Section -->
+                    <div class="container">
+                        <!-- Summary Section -->
+                        <div class="card-summary">
+                            <div class="overview__sales-totals summary-section">
+                                <div class="overview__totals-list horizontal">
+                                    <!-- Total Sales -->
+                                    <div class="sales-overview">
+                                        <div class="overview__top-products-row">
+                                            <p class="overview__growth-title ui text size-textxl">Total Sales</p>
+                                            <button class="overview__categories-expand ui button indigo_50 size-xs outline circle">
+                                                <img src="public/images/img_arrow_up_right.svg"/>
+                                            </button>
+                                        </div>
+                                        <div class="sales-overview__content">
+                                            <h1 class="sales-overview__amount ui heading size-text2xl">$150,000</h1>
+                                            <div class="sales-overview__details">
+                                                <img src="public/images/img_caret_up_fill.svg" alt="Trend Indicator" class="sales-overview__trend-icon"/>
+                                                <p class="sales-overview__trend-text ui text size-textmd">
+                                                    <span class="sales-overview__trend-text-span"> +2.11%</span>
+                                                    <span class="sales-overview__trend-text-span-2"> from last 30 days</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Total Transactions -->
+                                    <div class="sales-overview">
+                                        <div class="overview__top-products-row">
+                                            <p class="overview__growth-title ui text size-textxl">Total Transactions</p>
+                                            <button class="overview__categories-expand ui button indigo_50 size-xs outline circle">
+                                                <img src="public/images/img_arrow_up_right.svg" />
+                                            </button>
+                                        </div>
+                                        <div class="sales-overview__content">
+                                            <h1 class="sales-overview__amount ui heading size-text2xl">1200</h1>
+                                            <div class="sales-overview__details">
+                                                <img src="public/images/img_caret_down_fill.svg" alt="Trend Indicator" class="sales-overview__trend-icon"/>
+                                                <p class="sales-overview__trend-text ui text size-textmd">
+                                                    <span class="sales-overview__trend-text-span"> -1.05%</span>
+                                                    <span class="sales-overview__trend-text-span-2"> from last 30 days</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Revenue Growth -->
+                                    <div class="sales-overview">
+                                        <div class="overview__top-products-row">
+                                            <p class="overview__growth-title ui text size-textxl">Revenue Growth</p>
+                                            <button class="overview__categories-expand ui button indigo_50 size-xs outline circle">
+                                                <img src="public/images/img_arrow_up_right.svg" />
+                                            </button>
+                                        </div>
+                                        <div class="sales-overview__content">
+                                            <h1 class="sales-overview__amount ui heading size-text2xl">15%</h1>
+                                            <div class="sales-overview__details">
+                                                <img src="public/images/img_caret_up_fill.svg" alt="Trend Indicator" class="sales-overview__trend-icon"/>
+                                                <p class="sales-overview__trend-text ui text size-textmd">
+                                                    <span class="sales-overview__trend-text-span"> +3.21%</span>
+                                                    <span class="sales-overview__trend-text-span-2"> from last 30 days</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Top Selling Products Section -->
+                        <div class="top-selling-product">
+                            <div class="overview__top-products top-selling-section">
+                                <div class="overview__top-products-row">
+                                    <p class="overview__top-products-title ui text size-textxl">Top Selling Product</p>
+                                    <div class="overview__top-products-controls">
+                                        <button class="overview__categories-expand ui button indigo_50 size-xs outline circle">
+                                            <img src="public/images/img_arrow_up_right.svg"/>
+                                        </button>
+                                        <button class="overview__top-products-more ui button indigo_50 size-xs outline circle">
+                                            <img src="public/images/img_three_dots_deep_purple_900.svg" />
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="overview__top-product-list">
+                                    <div class="product-details">
+                                        <p class="product-details__title ui text size-textmd">1</p>
+                                        <div class="product-details__info">
+                                            <p class="product-details__info__name ui text size-textmd">Sharp AC A12X</p>
+                                            <p class="product-details__info__quantity ui text size-texts">
+                                                <span class="product-details__info__quantity-span"> 1200 units</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <p class="product-details__title ui text size-textmd">2</p>
+                                        <div class="product-details__info">
+                                            <p class="product-details__info__name ui text size-textmd">Samsung Fridge</p>
+                                            <p class="product-details__info__quantity ui text size-texts">
+                                                <span class="product-details__info__quantity-span"> 850 units</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <p class="product-details__title ui text size-textmd">3</p>
+                                        <div class="product-details__info">
+                                            <p class="product-details__info__name ui text size-textmd">Maspion Rice Cooker</p>
+                                            <p class="product-details__info__quantity ui text size-texts">
+                                                <span class="product-details__info__quantity-span"> 600 units</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <p class="product-details__title ui text size-textmd">4</p>
+                                        <div class="product-details__info">
+                                            <p class="product-details__info__name ui text size-textmd">Bow Skirt</p>
+                                            <p class="product-details__info__quantity ui text size-texts">
+                                                <span class="product-details__info__quantity-span"> 250 units</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <p class="product-details__title ui text size-textmd">5</p>
+                                        <div class="product-details__info">
+                                            <p class="product-details__info__name ui text size-textmd">Miyako Fan E12</p>
+                                            <p class="product-details__info__quantity ui text size-texts">
+                                                <span class="product-details__info__quantity-span"> 150 units</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sales Growth Section -->
+                    <div class="overview__growth-section">
+                        <div class="overview__growth-row">
+                            <p class="overview__growth-title ui text size-textxl">Sales Growth</p>
+                            <div class="overview__growth-controls">
+                                <select 
+                                class="overview__duration-dropdown ui selectbox indigo_50 size-xs outline round" 
+                                name="Duration Dropdown"
+                                >
+                                    <option value="option1">Last 12 Months</option>
+                                    <option value="option2">Option2</option>
+                                    <option value="option3">Option3</option>
+                                </select>
+                                <button class="overview__top-products-more ui button indigo_50 size-xs outline circle">
+                                    <img src="public/images/img_three_dots.svg" />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="overview__chart-section">
+                            <div class="overview__chart-row">
+                                <div class="overview__chart-data">
+                                    <div class="overview__data-column">
+                                        <div class="overview__amount-row">
+                                            <p class="overview__amount-value ui text size-textxl">800</p>
+                                            <img src="public/images/img_vector.png" alt="Vector Image" class="overview__amount-icon" />
+                                        </div>
+                                        <div class="overview__amount-row">
+                                            <p class="overview__amount-value ui text size-textxl">600</p>
+                                            <p class="overview__amount-icon--600"></p>
+                                        </div>
+                                        <div class="overview__amount-row">
+                                            <p class="overview__amount-value ui text size-textxl">400</p>
+                                            <img src="public/images/img_vector.png" alt="Vector Image" class="overview__amount-icon" />
+                                        </div>
+                                        <div class="overview__amount-row">
+                                            <p class="overview__amount-value ui text size-textxl">200</p>
+                                            <div class="overview__amount-icon--200"></div>
+                                        </div>
+                                        <div class="overview__amount-row--zero">
+                                            <p class="overview__amount-value--zero ui text size-textxl">0</p>
+                                            <div class="overview__amount-icon--zero"></div>
+                                            <img src="public/images/img_group.svg" alt="Group Image" class="overview__amount-image" />
+                                        </div>
+                                    </div>
+                                    <div class="overview__chart-column">
+                                        <div class="overview__vector-row">
+                                            <img 
+                                            src="public/images/img_vector_deep_purple_a108.png" 
+                                            alt="Vector Image" 
+                                            class="overview__vector-image" 
+                                            />
+                                        </div>
+                                        <div class="overview__months-row">
+                                            <img 
+                                            src="public/images/img_group.svg" 
+                                            alt="January Image" 
+                                            class="overview__month-image--jan" 
+                                            />
+                                            <img 
+                                            src="public/images/img_group.svg" 
+                                            alt="February Image" 
+                                            class="overview__month-image--jan" 
+                                            />
+                                            <img src="public/images/img_group.svg" alt="March Image" class="overview__month-image--jan" />
+                                            <img src="public/images/img_group.svg" alt="April Image" class="overview__month-image--jan" />
+                                            <img src="public/images/img_group.svg" alt="May Image" class="overview__month-image--jan" />
+                                            <img src="public/images/img_group.svg" alt="June Image" class="overview__month-image--jan" />
+                                        </div>
+                                        <div class="overview__months-Labels">
+                                            <p class="ui text size-textxl">Jan</p>
+                                            <div class="overview__month-row--feb-mar">
+                                                <p class="ui text size-textxl">Feb</p>
+                                                <p class="overview__month-label--mar ui text size-textxl">Mar</p>
+                                            </div>
+                                            <p class= "ui text size-textxl">Apr</p>
+                                            <p class="overview__month-label--may ui text size-textxl">May</p>
+                                            <p class="overview__month-label--jun ui text size-textxl">Jun</p>
+                                            <p class="overview__month-label--may ui text size-textxl">Jul</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                    </div>
+                                    <img src="public/images/img_frame_2609885.svg" alt="Frame Image" class="overview__chart-image" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sales by Category Section -->
+                    <div class="overview__categories-section">
+                        <div class="overview__top-products-row">
+                            <p class="overview__categories-title ui text size-textxl">Sales by Category</p>
+                            <button class="overview__categories-expand ui button indigo_50 size-xs outline circle">
+                            <img src="public/images/img_arrow_up_right.svg"/>
+                            </button>
+                        </div>
+                        <div class="overview__categories-details">
+                            <div class="overview__categories-row--details">
+                                <div class="overview__category--electronics">
+                                    <div class="overview__category-column--electronics">
+                                        <h4 class="overview__category-value--electronics ui heading size-textlg">40%<br />Electronics</h4>
+                                        <h5 class="overview__category-value--home ui heading size-textlg">15%<br/>Home</h5>
+                                    <div class="overview__category-row--clothing-others">
+                                        <h6 class="overview__category-value--clothing ui heading size-textlg">35%<br/>Clothing</h6>
+                                        <p class="overview__category-value--others ui heading size-textlg">20%<br />Others</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="overview__category-row--summary">
+                                    <p class="overview__category-percentage ui heading size-textxs">40%</p>
+                                    <p class="overview__category-description ui heading size-textxs">
+                                        of the total 3,500 units sold are Electronics
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
