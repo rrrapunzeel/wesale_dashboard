@@ -1,0 +1,138 @@
+.ui.selectbox.round {
+    border-radius: var(--space-xl);
+}
+
+.ui.selectbox.size-xs {
+    height: 36px;
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
+    font-size: 16px;
+}
+
+.ui.selectbox.outline.indigo_50 {
+    color: var(--blue_gray_600);
+    border: 1px solid var(--indigo_50);
+}
+
+.ui.selectbox {
+    display: flex;
+}
+
+.ui.button.round {
+    border: var(--radius-2xl);
+}
+
+.ui.button.circle {
+    border-radius: 50%;
+}
+
+.ui.button.size-sm {
+    height: 40px;
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+}
+
+.ui.button.size-md {
+    height: 42px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 18px;
+}
+
+.ui.button.size-xs {
+    height: 36px;
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+}
+
+.ui.button.fill.deep_puprle_50 {
+    background-color: var(--deep_purple_50);
+    color: var(--deep_purple_900);
+}
+
+.ui.button.fill.white_a700 {
+    background-color: var(--white_a700);
+    color: var(--blue_gray_500);
+}
+
+.ui.button.outline.indigo_50 {
+    border: 1px solid var(--indigo_50);
+}
+
+.ui.button {
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    border-width: 1px;
+    border-style:solid;
+}
+
+.ui.text.sieze-texts {
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ui.text.size-textmd {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ui.text.size-textxl {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ui.text {
+    color: var(--indigo_300);
+    font-family: DM Sans;
+}
+
+.ui.heading.size-textxs {
+    font-size: 10px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.ui.heading.size-textlg {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: bold;
+}
+
+.ui.heading.size-text2xl {
+    font-size: 36px;
+    font-weight: 500;
+    font-style: bold;
+    @media only screen and (max-width: 1050px) {
+        font-size: 34px;
+    }
+
+    @media only screen and (max-width: 550px) {
+        font-size: 32px;
+    }
+}
+
+.ui.heading.size-text3xl {
+    font-size: 40px;
+    font-weight: 500;
+    font-style: bold;
+    @media only screen and (max-width: 1050px) {
+        font-size: 38px;
+    }
+
+    @media only screen and (max-width: 550px) {
+        font-size: 36px;
+    }
+}
+
+.ui.heading {
+    color: var(--blue_gray_700);
+    font-family: DM Sans;
+}

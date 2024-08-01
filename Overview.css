@@ -1,0 +1,769 @@
+.sales-overview__trend-icon {
+    height: 16px;
+    width: 16px;
+}
+
+.sales-overview__trend-text {
+    color: var(--black_900) !important;
+    font-family: Inter !important;
+}
+
+.sales-overview__trend-text-span-1 {
+    color: var(--teal_700);
+    font-family: DM Sans;
+}
+
+.sales-overview__trend-text-span-2 {
+    color: var(--blue_gray_400);
+    font-family: DM Sans;
+}
+
+.sales-overview {
+    gap: var(--space-4xl);
+    display: flex;
+    width: 32%;
+    flex-direction: column;
+    padding: var(--space-2xl) 28px;
+    border-right: 1px dashed var(--deep_purple_100_66);
+    @media only screen and (max-width: 1050px) {
+        width: 100%;
+    }
+}
+
+.overview__top-products-row {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-xl);
+}
+
+.overview__growth-title {
+    width: 36px;
+    border-radius: 18px !important;
+}
+
+.sales-overview__content {
+    gap: var(--space-xs);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.sales-overview__amount {
+    color: var(--blue_gray_500) !important;
+}
+
+.sales-overview__details {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+}
+
+.overvie__top-products-more {
+    width: 34px;
+    border-radius: 16px !important;
+}
+
+.overview__amount-row {
+    gap: var(--space-md);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overview__month-image--jan {
+    height: 4px;
+}
+
+.overview__month-label--may {
+    margin-left: 80px;
+    @media only screen and (max-width: 1050px) {
+        margin-left: 0px;
+    }
+}
+
+.product-details {
+    gap: var(--space-lg);
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.product-details__title {
+    color: var(--blue_gray_500) !important;
+    font-weight: 500 !important;
+    background-color: var(--gray_100);
+    width: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 30px;
+    border-radius: var(--radius-md);
+}
+
+.product-details__info {
+    align-self: end;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-xl);
+}
+
+.product-details__info_name {
+    color: var(--gray_900_01) !important;
+}
+
+.product-details__info__quantity {
+    color: var(--blue_gray_300) !important;
+    font-family: Inter !important;
+    align-self: start;
+}
+
+.product-details__info__quantity-span {
+    color: var(--blue_gray_300);
+    font-family: DM Sans;
+}
+
+.product-details__info__quantity-span-1 {
+    color: var(--blue_gray_300);
+}
+
+
+.overview {
+    padding-top: 68px;
+    padding-bottom: 68px;
+    background-color: var(--gray_50);
+    width: 100%;
+    @media only screen and (max-width: 1050px) {
+        padding-top: var(--space-xl);
+        padding-bottom: var(--space-xl);
+    }
+}
+
+.overview-1 {
+    gap: 26px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    max-width: 1304px;
+    margin-left: auto;
+    margin-right: auto;
+    @media only screen and (max-width:1050px) {
+        padding: var(--space-xl);
+    }
+}
+
+/* Container for all overviews */
+.overview__sales-totals {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-4xl); /* Adjust gap as needed */
+    background-color: var(--white_a700);
+    border-radius: var(--radius-4xl);
+    border: 1px solid var(--deep_purple_100_66);
+    padding: var(--space-2xl);
+}
+
+/* Sales overview individual item */
+.sales-overview {
+    display: flex;
+    flex-direction: column;
+    width: 33%; /* Each item takes up 33% of the container */
+    padding: var(--space-2xl);
+    border-right: 1px dashed var(--deep_purple_100_66);
+}
+
+.sales-overview:last-child {
+    border-right: none; /* Remove border for the last item */
+}
+
+
+.header {
+    gap:var(--space-md);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.header__top-row {
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-xl);
+    @media only screen and (max-width: 1050px) {
+        flex-direction: column;
+    }
+}
+
+.header__logo {
+    height: 36px;
+    width: 10%;
+    object-fit: contain;
+    @media only screen and (max-width: 1050px) {
+        width: 100%;
+    }
+}
+
+.header__navigation {
+    gap: var(--space-lg);
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (max-width: 550px) {
+        width: 100%;
+    }
+
+    @media only screen and (max-width:550px) {
+        flex-direction: column;
+    }
+}
+
+.header__navigation-row {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (max-width: 550px) {
+        align-self: stretch;
+        flex-direction: column;
+    }
+}
+
+.header__button--overview {
+    font-weight: 500;
+    border-color: var(--indigo_50);
+    flex: 1;
+    @media only screen and (max-width: 550px) {
+        align-self: stretch;
+    }
+}
+
+.header__button--sales-records {
+    font-weight: 500;
+    border-color: var(--deep_purple_100);
+    min-width: 166px;
+}
+
+.header__button--analytic {
+    font-weight: 500;
+    border-color: var(--deep_purple_100);
+    flex: 1;
+    @media only screen and (max-width: 550px) {
+        align-self: stretch;
+    }
+}
+
+.header__notification {
+    border-color: var(--radius-4xl);
+    @media only screen and (max-width: 550px) {
+        width: 100%;
+    }
+}
+
+.header__profile-image {
+    height: 52px;
+    width: 52px;
+    object-fit: cover;
+    border-radius: var(--radius-3xl);
+}
+
+.header__title {
+    font-size: 40px;
+    font-weight: 500;
+    font-family: DM Sans;
+    color: var(--black_900) !important;
+}
+
+.main-content {
+    gap: 24px;
+    display: flex;
+    @media only screen and (max-width: 1050px) {
+        flex-direction: column;
+    }
+}
+
+.overview__content {
+    gap: var(--space-3xl);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    @media only screen and (max-width: 1050px) {
+        align-self: stretch;
+    }
+}
+
+.overview__sales-totals {
+    background-color: var(--white_a700);
+    border-radius: var(--radius-4xl);
+    border: 1px solid var(--deep_purple_100_66);
+}
+
+.overview__total-list {
+    gap: var(--space-md);
+    display: flex;
+    @media only screen and (max-width: 1050px) {
+        flex-direction: column;
+    }
+}
+
+.overview__growth-section {
+    gap: 12px;
+    display: flex;
+    background-color: var(--white_a700);
+    flex-direction: column;
+    padding: var(--space-2xl);
+    border-radius: var(--radius-4xl);
+    border: 0.5px solid var(--deep_purple_100_66);
+    @media only screen and (max-width: 550px)  {
+        padding: var(--space-xl);
+    }
+}
+
+.overview__growth-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overview__growth-controls {
+    gap: 9px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.overview__duration-dropdown {
+    font-weight: 500;
+    gap: var(--space-xl);
+    width: 18%;
+    background-image: url(../public/images/img_chevron.svg);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: calc(100% - 16px);
+}
+
+.overview__chart-section {
+    margin-bottom: 10px;
+    gap: var(--space-3xl);
+    background-color: var(--white_a700);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: var(--space-sm) var(--space-3xl);
+    @media only screen and (max-width: 550px) {
+        padding-left: var(--space-xl);
+        padding-right: var(--space-xl);
+    }
+}
+
+.overview__chart-row {
+    margin-top: 22px;
+    align-self: stretch;
+}
+
+.overview__chart-data {
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    @media only screen and (max-width: 1050px) {
+        flex-direction: column;
+    }
+}
+
+.overview__data-column {
+    gap: var(--space-2xl);
+    z-index: 1;
+    display: flex;
+    width: 6%;
+    position: relative;
+    flex-direction: column;
+    @media only screen and (max-width: 1050px) {
+        width: 100%;
+    }
+}
+
+.overview__amount-icon--600 {
+    height: 1px;
+    background-color: var(deepp_purple_a100);
+    width: 8px;
+}
+
+.overview__amount-icon--200 {
+    height: 1px;
+    margin-bottom: 10px;
+    align-self: end;
+    background-color: var(--deep_purple_a100);
+    width: 8px;
+}
+
+.overview__amount-row--zero {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.overview__amount-value--zero {
+    color: var(--deep_purple_a100) !important;
+    align-self: center;
+}
+
+.overview__amount-icon--zero {
+    height: 1px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    background-color: var(--deep_purple_a100);
+    width: 8px;
+}
+
+.overview__amount-image {
+    height: 4px;
+    margin-bottom: 6px;
+}
+
+.overview__chart-column {
+    margin-top: 12px;
+    gap: 2px;
+    align-self: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    @media only screen and (max-width: 1050px) {
+        align-self: stretch;
+    }
+}
+
+.overview__vector-row {
+    height: 232px;
+    background-image: url(../publix/images/img_group_1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media only screen and (max-width: 1050px) {
+        height: auto;
+    }
+}
+
+.overview__vector-image {
+    height: 222px;
+    width: 100%;
+    object-fit: cover;
+    @media only screen and (max-width: 1050px){
+    height: auto;
+ }
+}
+
+.overview__months-row {
+    margin-left: 110px;
+    margin-right: 110px;
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-xl);
+    @media only screen and (max-width: 1050px) {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+.overview__months-label {
+    display: flex;
+    @media only screen and (max-width: 1050px) {
+        flex-direction: column;
+    }
+}
+
+.overview__month-row--feb-mar {
+    padding-left: 66px;
+    padding-right: 66px;
+    width: 56%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--space-xl);
+    @media only screen and (max-width: 1050px) {
+        width: 100%;
+        padding-left: var(--space-xl);
+        padding-right: var(--space-xl);
+    }
+}
+
+.overview__moth-label--mar {
+    margin-right: 10px;
+    @media only screen and (max-width: 1050px) {
+        margin-right: 0px;
+    }
+}
+
+.overview__month-label--jun {
+    margin-left: 74px;
+    @media only screen and (max-width: 1050px) {
+        margin-left: 0px;
+    }
+}
+
+.overview__chart-image {
+    height: 3px;
+    width: 94%;
+    object-fit: contain;
+}
+
+.overview__products-section {
+    gap: var(--space-3xl);
+    display: flex;
+    width: 24%;
+    flex-direction: column;
+    @media only screen and (max-width: 1050px) {
+        width: 100%;
+    }
+}
+
+.overview__top-products {
+    margin-right: 8px;
+    gap: 34px;
+    display: flex;
+    background-color: var(--white_a700);
+    flex-direction: column;
+    padding: 24px 22px;
+    border-radius: var(--radius-4xl);
+    border: 1px solid var(--deep_purple_100_66);
+    @media only screen and (max-width: 1050px) {
+        margin-right: 0px;
+    }
+    
+    @media only screen and (max-width: 550px) {
+        padding: var(--space-xl);
+    }
+}
+
+.overview__top-products-title {
+    color: var(--gray_900) !important;
+    font-weight: 500 !important;
+    width: 46%;
+    line-height: 23px;
+}
+
+.overview__top-products-controls {
+    display: flex;
+    align-items: center;
+}
+
+.overview__top-products-list {
+    gap: var(--space-sm);
+    display: flex;
+    flex-direction: column;
+}
+
+.overview__categories-section {
+    margin-right: 8px;
+    gap: var(--space-xl);
+    display: flex;
+    background-color: var(--white_a700);
+    flex-direction: column;
+    padding: 22px;
+    border-radius: 1px solid var(--deep_purple_100_66);
+    @media only screen and (max-width: 1050px) {
+        margin-right: 0px;
+    }
+
+    @media only screen and (max-width: 550px) {
+        padding: var(--space-xl);
+    }
+}
+
+.overview__categories-title {
+    color: var(--gray_900) !important;
+    font-weight: 500 !important;
+    align-self: end;
+}
+
+.overview__categories-details {
+    gap: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+}
+
+.overview__categories-row--details {
+    height: 240px;
+    background-image: url(../public/images/img_frame_43.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 26px var(--space-xl);
+    @media only screen and (max-width: 1050px) {
+        height: auto;
+    }
+
+    @media only screen and (max-width: 550px) {
+        padding-top: var(--space-xl);
+        padding-bottom: var(--space-xl);
+    }
+}
+
+.overview__category--electronics {
+    margin-bottom: 14px;
+}
+
+.overview__category-column--electronics {
+    display: flex;
+    flex-direction: column;
+}
+
+.overview__category-value--electronics {
+    margin-left: 48px;
+    text-align: center;
+    line-height: 20px;
+    @media only screen and (max-width: 1050px) {
+        margin-left: 0px;
+    }
+}
+
+.overview__category-value--home {
+    margin-top: 6px;
+    margin-right: 18px;
+    text-align: center;
+    font-weight: 400 !important;
+    align-self: end;
+    line-height: 20px;
+    @media only screen and (max-width: 1050px) {
+        margin-right: 0px;
+    }
+}
+
+.overview__category-row--clothing-others {
+    margin-top: 10px;
+    gap: 45px;
+    display: flex;
+    align-items: start;
+}
+
+.overview__category-value--clothing {
+    margin-bottom: 30px;
+    text-align: center;
+    width: 36%;
+    line-height: 20px;
+}
+
+.overview__category-value--others {
+    text-align: center;
+    align-self: end;
+    width: 30%;
+    line-height: 20px;
+}
+
+.overview__category-row--summary {
+    gap: 6px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: var(--radius-sm);
+    border: 1px solid var(--indigo_50);
+}
+
+.overview__categoru-percentage {
+    color: var(--blue_gray_600) !important;
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+    background-color: var(--indigo_50);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    border-radius: var(--radius-xs);
+}
+
+.overview__category-description {
+    font-weight: 400 !important;
+}
+
+/* Tambahan terbaru */
+
+.horizontal {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sales-overview {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* CSS lama */
+.sales-overview__trend-icon {
+    height: 16px;
+    width: 16px;
+}
+
+/* Aturan CSS baru */
+.sales-overview {
+    gap: var(--space-4xl);
+    display: flex;
+    width: 32%;
+    flex-direction: column;
+    padding: var(--space-2xl) 28px;
+    border-right: 1px dashed var(--deep_purple_100_66);
+}
+
+@media only screen and (max-width: 1050px) {
+    .sales-overview {
+        width: 100%;
+    }
+}
+
+/* Aturan CSS baru lainnya */
+.overview__top-products-row {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-xl);
+}
+
+/* CSS lama */
+.sales-overview__content {
+    gap: var(--space-xs);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+/* Container yang membungkus card-summary dan top-selling-product */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Membuat elemen di dalamnya bisa membungkus jika diperlukan */
+    gap: var(--space-xl); /* Jarak antar elemen, sesuaikan jika diperlukan */
+}
+
+/* Card Summary Section */
+.card-summary {
+    flex: 1 1 auto; /* Mengatur agar card-summary mengikuti konten dan tidak penuh satu layar */
+    max-width: 60%; /* Atur lebar maksimum sesuai kebutuhan */
+    background-color: var(--white_a700);
+    padding: var(--space-xl);
+    border-radius: var(--radius-4xl);
+    border: 1px solid var(--deep_purple_100_66);
+}
+
+/* Top Selling Product Section */
+.top-selling-product {
+    flex: 1 1 auto; /* Mengatur agar top-selling-product mengikuti konten dan tidak penuh satu layar */
+    max-width: 35%; /* Atur lebar maksimum sesuai kebutuhan */
+    background-color: var(--white_a700);
+    padding: var(--space-xl);
+    border-radius: var(--radius-4xl);
+    border: 1px solid var(--deep_purple_100_66);
+}
+
+/* Responsivitas */
+@media only screen and (max-width: 1050px) {
+    .container {
+        flex-direction: column; /* Mengubah arah flex menjadi kolom pada layar kecil */
+    }
+
+    .card-summary, .top-selling-product {
+        max-width: 100%; /* Memastikan elemen mengisi penuh pada layar kecil */
+    }
+}
